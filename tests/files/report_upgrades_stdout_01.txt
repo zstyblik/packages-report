@@ -1,0 +1,13 @@
+# Packages report
+
+Date: 2026-07-04T12:01:02Z+0000
+Hostname: pytest-host
+Report type: upgrades
+
+## Packages
+
+| Name         | Version          | Arch  | Origin                             |
+|--------------|------------------|-------|------------------------------------|
+| libngtcp2-16 | 1.11.0-1+deb13u1 | amd64 | Debian-Security:13/stable-security |
+
+-- End of packages report

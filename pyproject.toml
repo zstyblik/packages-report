@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools >=64", "setuptools_scm[toml] >=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "packages_report"
+authors = [
+    {name = "Zdenek Styblik"},
+]
+description = "Generate report either on installed packages or pending package upgrades."
+readme = "README.md"
+license = " GPL-2.0-or-later"
+license-files = ["LICEN[CS]E*"]
+requires-python = ">=3.11"
+keywords = ["linux", "debian"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["dependencies", "version"]
+
+[project.scripts]
+packages_report = "packages_report.cli:main"
+
+[project.urls]
+Repository = "https://github.com/zstyblik/fixme.git"
+Issues = "https://github.com/zstyblik/fixme/issues"
+
+[tool.black]
+line-length = 80
+target-version = ["py311"]
+include = '\.pyi?$'
+unstable = false
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools_scm]
+# Nothing so far.

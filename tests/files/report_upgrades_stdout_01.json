@@ -1,0 +1,1 @@
+{"datetime": "2026-07-04T12:01:02Z+0000", "hostname": "pytest-host", "payload": [{"arch": "amd64", "name": "libngtcp2-16", "origin": "Debian-Security:13/stable-security", "version": "1.11.0-1+deb13u1"}], "report_type": "upgrades", "service": "packages-report", "version": 1}

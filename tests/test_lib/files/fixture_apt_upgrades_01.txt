@@ -1,0 +1,15 @@
+root@observatory:~# apt-get -s upgrade
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+The following packages were automatically installed and are no longer required:
+  augeas-lenses gsasl-common libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64 libaugeas0 libgsasl18 libgssglue1 liblua5.4-0 libntlm0 libsecret-1-0 libsecret-common python3-augeas python3-dbus python3-distro-info ssl-cert
+Use 'apt autoremove' to remove them.
+The following packages will be upgraded:
+  libngtcp2-16 libngtcp2-crypto-gnutls8
+2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Inst libngtcp2-16 [1.11.0-1] (1.11.0-1+deb13u1 Debian-Security:13/stable-security [amd64])
+Inst libngtcp2-crypto-gnutls8 [1.11.0-1] (1.11.0-1+deb13u1 Debian-Security:13/stable-security [amd64])
+Conf libngtcp2-16 (1.11.0-1+deb13u1 Debian-Security:13/stable-security [amd64])
+Conf libngtcp2-crypto-gnutls8 (1.11.0-1+deb13u1 Debian-Security:13/stable-security [amd64])

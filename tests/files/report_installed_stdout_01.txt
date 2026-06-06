@@ -1,0 +1,13 @@
+# Packages report
+
+Date: 2026-07-04T12:01:02Z+0000
+Hostname: pytest-host
+Report type: installed
+
+## Packages
+
+| Name    | Version | Arch |
+|---------|---------|------|
+| adduser | 3.152   | all  |
+
+-- End of packages report

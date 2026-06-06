@@ -1,0 +1,1 @@
+{"datetime": "2026-07-04T12:01:02Z+0000", "hostname": "pytest-host", "payload": [{"arch": "all", "name": "adduser", "state": "ii", "version": "3.152"}], "report_type": "installed", "service": "packages-report", "version": 1}
