@@ -2,7 +2,7 @@
 flake8==7.3.0
 flake8-docstrings==1.7.0
 flake8-import-order==0.19.2
-reorder-python-imports==3.16.0
+reorder-python-imports==3.17.0
 # tests
 freezegun==1.5.5
 pytest==9.1.1
