@@ -201,6 +201,19 @@ def test_parse_package_list(fixture_fname, expected):
                 arch="amd64",
             ),
         ),
+        (
+            (
+                "Conf libblkid1 (2.41.5-0+deb13u1 "
+                "Debian-Security:13/stable-security [amd64]) [libmount1:amd64 "
+                "util-linux:amd64 libfdisk1:amd64 mount:amd64 ]"
+            ),
+            models.PackageUpgrade(
+                name="libblkid1",
+                version="2.41.5-0+deb13u1",
+                origin="Debian-Security:13/stable-security",
+                arch="amd64",
+            ),
+        ),
     ],
 )
 def test_parse_package_upgrade(input_data, expected):
@@ -224,6 +237,95 @@ def test_parse_package_upgrade(input_data, expected):
                 models.PackageUpgrade(
                     name="libngtcp2-crypto-gnutls8",
                     version="1.11.0-1+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+            },
+        ),
+        (
+            "fixture_apt_upgrades_02.txt",
+            {
+                models.PackageUpgrade(
+                    name="bsdutils",
+                    version="1:2.41.5-0+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+                models.PackageUpgrade(
+                    name="libblkid1",
+                    version="2.41.5-0+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+                models.PackageUpgrade(
+                    name="libuuid1",
+                    version="2.41.5-0+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+                models.PackageUpgrade(
+                    name="fdisk",
+                    version="2.41.5-0+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+                models.PackageUpgrade(
+                    name="libfdisk1",
+                    version="2.41.5-0+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+                models.PackageUpgrade(
+                    name="libmount1",
+                    version="2.41.5-0+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+                models.PackageUpgrade(
+                    name="libsmartcols1",
+                    version="2.41.5-0+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+                models.PackageUpgrade(
+                    name="bsdextrautils",
+                    version="2.41.5-0+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+                models.PackageUpgrade(
+                    name="mount",
+                    version="2.41.5-0+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+                models.PackageUpgrade(
+                    name="uuid-runtime",
+                    version="2.41.5-0+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+                models.PackageUpgrade(
+                    name="login",
+                    version="1:4.16.0-2+really2.41.5-0+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+                models.PackageUpgrade(
+                    name="util-linux",
+                    version="2.41.5-0+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+                models.PackageUpgrade(
+                    name="eject",
+                    version="2.41.5-0+deb13u1",
+                    origin="Debian-Security:13/stable-security",
+                    arch="amd64",
+                ),
+                models.PackageUpgrade(
+                    name="liblastlog2-2",
+                    version="2.41.5-0+deb13u1",
                     origin="Debian-Security:13/stable-security",
                     arch="amd64",
                 ),
