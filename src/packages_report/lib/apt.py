@@ -83,12 +83,29 @@ def parse_package_list(stdout: str) -> Set[PackageMetadata]:
 
 def parse_package_upgrade(line: str) -> PackageUpgrade:
     """Parse Conf line and return instance of PackageUpgrade."""
-    re_brackets = re.compile(r"[\[\]\(\)]")
-    name, details = line.split(" ", 2)[1:3]
-    splitted = details.split()
-    version = splitted[0][1:]
-    origin = " ".join(splitted[1:-1])
-    arch = re_brackets.sub("", splitted[-1])
+    match = re.search(
+        (
+            r"^Conf[\s\t]+(?P<name>.+)[\s\t]+\((?P<version>.+)[\s\t]+"
+            r"(?P<origin>.+)[\s\t]+\[(?P<arch>.+)\]\)"
+        ),
+        line,
+        re.I,
+    )
+    if match:
+        match_dict = match.groupdict()
+        name = match_dict.get("name", "unknown")
+        version = match_dict.get("version", "unknown")
+        origin = match_dict.get("origin", "unknown")
+        arch = match_dict.get("arch", "unknown")
+    else:
+        # NOTE(zstyblik): old unreliable(in 2026) code path
+        re_brackets = re.compile(r"[\[\]\(\)]")
+        name, details = line.split(" ", 2)[1:3]
+        splitted = details.split()
+        version = splitted[0][1:]
+        origin = " ".join(splitted[1:-1])
+        arch = re_brackets.sub("", splitted[-1])
+
     return PackageUpgrade(
         name=name,
         version=version,

@@ -1,0 +1,38 @@
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+The following packages were automatically installed and are no longer required:
+  augeas-lenses gsasl-common libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64 libaugeas0 libgsasl18 libgssglue1 liblua5.4-0 libntlm0 libsecret-1-0 libsecret-common python3-augeas python3-dbus python3-distro-info ssl-cert
+Use 'apt autoremove' to remove them.
+The following packages will be upgraded:
+  bsdextrautils bsdutils eject fdisk libblkid1 libfdisk1 liblastlog2-2 libmount1 libsmartcols1 libuuid1 login mount util-linux uuid-runtime
+14 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Inst bsdutils [1:2.41-5] (1:2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64])
+Conf bsdutils (1:2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64])
+Inst eject [2.41-5] (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) []
+Inst bsdextrautils [2.41-5] (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) []
+Inst liblastlog2-2 [2.41-5] (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [util-linux:amd64 on liblastlog2-2:amd64] [util-linux:amd64 ]
+Conf liblastlog2-2 (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [util-linux:amd64 ]
+Inst libblkid1 [2.41-5] (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [util-linux:amd64 on libblkid1:amd64] [util-linux:amd64 on liblastlog2-2:amd64] [mount:amd64 on libblkid1:amd64] [libmount1:amd64 util-linux:amd64 libfdisk1:amd64 mount:amd64 ]
+Conf libblkid1 (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [libmount1:amd64 util-linux:amd64 libfdisk1:amd64 mount:amd64 ]
+Inst libmount1 [2.41-5] (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [util-linux:amd64 on libblkid1:amd64] [util-linux:amd64 on liblastlog2-2:amd64] [util-linux:amd64 on libmount1:amd64] [mount:amd64 on libblkid1:amd64] [mount:amd64 on libmount1:amd64] [util-linux:amd64 fdisk:amd64 libfdisk1:amd64 mount:amd64 ]
+Conf libmount1 (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [util-linux:amd64 fdisk:amd64 libfdisk1:amd64 mount:amd64 ]
+Inst libsmartcols1 [2.41-5] (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [util-linux:amd64 on libblkid1:amd64] [util-linux:amd64 on liblastlog2-2:amd64] [util-linux:amd64 on libmount1:amd64] [util-linux:amd64 on libsmartcols1:amd64] [mount:amd64 on libblkid1:amd64] [mount:amd64 on libmount1:amd64] [mount:amd64 on libsmartcols1:amd64] [util-linux:amd64 fdisk:amd64 libfdisk1:amd64 uuid-runtime:amd64 mount:amd64 ]
+Conf libsmartcols1 (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [util-linux:amd64 fdisk:amd64 libfdisk1:amd64 uuid-runtime:amd64 mount:amd64 ]
+Inst mount [2.41-5] (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [util-linux:amd64 on libblkid1:amd64] [util-linux:amd64 on liblastlog2-2:amd64] [util-linux:amd64 on libmount1:amd64] [util-linux:amd64 on libsmartcols1:amd64] [util-linux:amd64 fdisk:amd64 libfdisk1:amd64 uuid-runtime:amd64 ]
+Inst fdisk [2.41-5] (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [util-linux:amd64 on libblkid1:amd64] [util-linux:amd64 on liblastlog2-2:amd64] [util-linux:amd64 on libmount1:amd64] [util-linux:amd64 on libsmartcols1:amd64] [util-linux:amd64 libfdisk1:amd64 uuid-runtime:amd64 ]
+Inst libuuid1 [2.41-5] (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [util-linux:amd64 on libblkid1:amd64] [util-linux:amd64 on liblastlog2-2:amd64] [util-linux:amd64 on libmount1:amd64] [util-linux:amd64 on libsmartcols1:amd64] [util-linux:amd64 on libuuid1:amd64] [util-linux:amd64 libfdisk1:amd64 uuid-runtime:amd64 ]
+Conf libuuid1 (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [util-linux:amd64 libfdisk1:amd64 uuid-runtime:amd64 ]
+Inst util-linux [2.41-5] (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [libfdisk1:amd64 uuid-runtime:amd64 ]
+Conf util-linux (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [libfdisk1:amd64 uuid-runtime:amd64 ]
+Inst libfdisk1 [2.41-5] (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64]) [uuid-runtime:amd64 ]
+Inst uuid-runtime [2.41-5] (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64])
+Inst login [1:4.16.0-2+really2.41-5] (1:4.16.0-2+really2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64])
+Conf eject (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64])
+Conf bsdextrautils (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64])
+Conf mount (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64])
+Conf fdisk (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64])
+Conf libfdisk1 (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64])
+Conf uuid-runtime (2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64])
+Conf login (1:4.16.0-2+really2.41.5-0+deb13u1 Debian-Security:13/stable-security [amd64])
