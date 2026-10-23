@@ -1,5 +1,5 @@
 ---
-name: CI for aws-cmp-secrets
+name: CI for packages-report
 
 on: [push]  # yamllint disable-line rule:truthy
 
